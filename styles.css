@@ -1,0 +1,165 @@
+/* styles.css */
+
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Gaya untuk gambar header */
+.header-image {
+  margin: 10px;
+  border-radius: 10px; /* Sudut melengkung */
+  transition: transform 0.3s ease;
+  border: 3px solid #fa0a6a; /* Garis pinggir hijau dengan ketebalan 3px */
+}
+
+.header-image:hover {
+  transform: scale(1.05); /* Efek zoom saat hover */
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+  background-image: url('cosmetik\ horizontal.webp'); /* Ganti dengan path gambar Anda */
+  background-size: cover; /* Menyesuaikan ukuran gambar dengan ukuran layar */
+  background-position: center; /* Memusatkan gambar */
+  background-repeat: no-repeat; /* Menghindari pengulangan gambar */
+}
+
+/* styles.css */
+
+/* ... kode CSS sebelumnya ... */
+
+.info-box {
+  background-color: rgba(255, 255, 255, 0.9); /* Warna latar belakang putih dengan transparansi */
+  border-radius: 10px; /* Sudut kotak yang membulat */
+  padding: 20px; /* Ruang di dalam kotak */
+  margin: 20px 0; /* Jarak di atas dan di bawah kotak */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bayangan untuk efek kedalaman */
+}
+
+/* Gaya untuk judul dalam kotak */
+.info-box h2 {
+  margin-bottom: 10px; /* Jarak bawah untuk judul */
+  color: #333; /* Warna teks */
+}
+
+/* Gaya untuk teks dalam kotak */
+.info-box p {
+  color: #555; /* Warna teks */
+}
+
+/* Gaya untuk galeri gambar */
+.image-gallery {
+  display: flex; /* Mengatur gambar dalam baris */
+  flex-wrap: wrap; /* Membungkus gambar jika tidak muat dalam satu baris */
+  gap: 10px; /* Jarak antara gambar */
+}
+
+/* Header */
+header {
+  background: linear-gradient(to right, #ff6f61, #de3d6d);
+  color: #fff;
+  padding: 20px 0;
+}
+
+.p1{
+  font-size: 20px;
+}
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5em;
+}
+
+nav {
+  text-align: center;
+  margin-top: 10px;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ffd700; /* Warna saat hover */
+}
+
+/* Main Content */
+main {
+  padding: 20px;
+  text-align: center;
+}
+
+#home {
+  margin: 20px auto;
+}
+
+.txt {
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin: 20px 0;
+  font-size: 2em;
+  color: #333;
+}
+
+.header-image {
+  margin: 10px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.header-image:hover {
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: linear-gradient(to right, #ff6f61, #de3d6d);
+  color: white;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-top: 20px;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+      width: 90%;
+  }
+
+  nav ul li {
+      display: block;
+      margin: 10px 0;
+  }
+
+  .header-image {
+      width: 100%;
+      max-width: 250px;
+  }
+}

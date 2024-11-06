@@ -1,0 +1,220 @@
+/* kontak.css */
+
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+  background-image: url('cosmetic13.png'); /* Ganti dengan path gambar Anda */
+  background-size: cover; /* Menyesuaikan ukuran gambar dengan ukuran layar */
+  background-position: center; /* Memusatkan gambar */
+  background-repeat: no-repeat; /* Menghindari pengulangan gambar */
+}
+
+/* Header */
+header {
+  background: linear-gradient(to right, #ff6f61, #de3d6d);
+  color: #fff;
+  padding: 20px 0;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5em;
+}
+
+nav {
+  text-align: center;
+  margin-top: 10px;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ffd700; /* Warna saat hover */
+}
+.contact-list li a {
+  text-decoration: none; /* Menghapus garis bawah pada tautan */
+  color: inherit; /* Mengambil warna teks dari elemen induk */
+}
+
+.contact-list li a:hover {
+  color: #de3d6d; /* Mengubah warna saat hover */
+}
+
+/* About Section */
+#about-us {
+  padding: 20px;
+  text-align: center;
+}
+
+.about {
+  max-width: 800px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+/* Konten Flexbox */
+.content {
+  display: flex;
+  justify-content: space-between; /* Menyebarkan ruang antara dua elemen */
+  align-items: flex-start; /* Mengatur elemen di bagian atas */
+}
+
+/* Memperbaiki lebar teks dan info kontak */
+.text-content {
+  flex: 1; /* Mengambil ruang yang tersedia */
+  margin-right: 20px; /* Jarak antara teks dan info kontak */
+}
+
+.contact-info {
+  flex: 0 0 300px; /* Lebar tetap untuk informasi kontak */
+  max-width: 300px; /* Maksimal lebar untuk informasi kontak */
+}
+
+h2 {
+  margin: 20px 0;
+  font-size: 2em;
+  color: #333;
+}
+
+.text-content {
+  margin-bottom: 20px;
+}
+
+.contact-info {
+  margin: 20px 0;
+}
+
+.contact-info h3 {
+  margin-bottom: 10px;
+  font-size: 1.5em;
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-list li {
+  margin: 10px 0;
+  font-size: 1.2em;
+}
+
+.contact-list li i {
+  margin-right: 10px;
+  color: #ff6f61;
+}
+
+/* Map */
+#map {
+  margin-top: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+      width: 90%;
+  }
+
+  h1 {
+      font-size: 2em;
+  }
+
+  h2 {
+      font-size: 1.8em;
+  }
+
+  .about {
+      padding: 15px;
+  }
+
+  .contact-list li {
+      font-size: 1em;
+  }
+}
+
+/* kontak.css */
+
+/* ... kode CSS sebelumnya ... */
+
+/* Animasi untuk teks */
+.text-content {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.text-content.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Animasi untuk peta */
+#map {
+  opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+#map.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Animasi untuk daftar kontak */
+.contact-list li {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.contact-list li.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background: linear-gradient(to right, #ff6f61, #de3d6d);
+  color: white;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* ... kode CSS selanjutnya ... */

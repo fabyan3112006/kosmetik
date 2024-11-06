@@ -1,0 +1,229 @@
+/* produk.css */
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Animasi untuk produk saat muncul */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px); /* Menggeser produk ke bawah */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Kembali ke posisi normal */
+    }
+}
+
+/* Gaya untuk kartu produk */
+.product-card {
+    background-color: rgba(255, 255, 255, 0.8); /* Warna latar belakang putih dengan transparansi */
+    border-radius: 10px; /* Membulatkan sudut */
+    padding: 15px; /* Menambahkan padding di dalam kartu */
+    text-align: center; /* Mengatur teks agar berada di tengah */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Menambahkan bayangan */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transisi untuk efek hover */
+    opacity: 0; /* Memulai dengan opacity 0 untuk animasi */
+    animation: fadeIn 0.5s ease forwards; /* Menambahkan animasi fadeIn */
+}
+
+/* Efek hover untuk kartu produk */
+.product-card:hover {
+    transform: scale(3.05); /* Membesarkan kartu saat hover */
+    box-shadow: 0 16px 32px rgb(255, 0, 144); /* Menambahkan bayangan lebih besar saat hover */
+}
+
+/* Gaya untuk section produk */
+#products {
+    background-image: url('cosmetic12.png'); /* Ganti dengan path gambar latar belakang Anda */
+    background-size: cover; /* Mengatur ukuran gambar agar menutupi seluruh area */
+    background-position: center; /* Mengatur posisi gambar di tengah */
+    padding: 40px 0; /* Menambahkan padding atas dan bawah */
+    color: white; /* Mengubah warna teks menjadi putih agar kontras dengan latar belakang */
+}
+
+/* Gaya untuk kontainer produk */
+.container {
+    max-width: 1200px; /* Mengatur lebar maksimum kontainer */
+    margin: 0 auto; /* Mengatur margin otomatis untuk pusat */
+    padding: 20px; /* Menambahkan padding di dalam kontainer */
+}
+
+/* Gaya untuk judul produk */
+h2 {
+    text-align: center; /* Mengatur teks judul agar berada di tengah */
+    margin-bottom: 20px; /* Menambahkan jarak bawah */
+}
+
+/* Gaya untuk grid produk */
+.product-grid {
+    display: grid; /* Menggunakan grid untuk tata letak produk */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Mengatur kolom grid */
+    gap: 20px; /* Menambahkan jarak antara produk */
+}
+
+/* Gaya untuk tombol beli */
+.buy-btn {
+    background-color: #ff4081; /* Warna latar belakang tombol */
+    color: white; /* Warna teks tombol */
+    border: none; /* Menghapus border */
+    border-radius: 5px; /* Membulatkan sudut tombol */
+    padding: 10px 15px; /* Menambahkan padding di dalam tombol */
+    cursor: pointer; /* Mengubah kursor saat hover */
+    transition: background-color 0.3s; /* Menambahkan efek transisi */
+}
+
+.buy-btn:hover {
+    background-color: #ff067e; /* Mengubah warna tombol saat hover */
+}
+
+/* Header */
+header {
+    background: linear-gradient(to right, #ff6f61, #de3d6d);
+    color: #fff;
+    padding: 20px 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+}
+
+nav {
+    text-align: center;
+    margin-top: 10px;
+}
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffd700; /* Warna saat hover */
+}
+
+/* Products Section */
+#products {
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    margin: 20px 0;
+    font-size: 2em;
+    color: #ff0000;
+    padding: 15px;
+    border-radius: 10%;
+    background-color: white;
+    box-shadow: #333;
+}
+
+/* Product Grid */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.product-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #ff6f61; /* Garis bawah gambar */
+}
+
+.product-card h3 {
+    margin: 10px 0;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.product-card p {
+    font-size: 1.2em;
+    color: #de3d6d;
+}
+
+.buy-btn {
+    background: #ff6f61;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background 0.3s ease;
+}
+
+.buy-btn:hover {
+    background: #b60137; /* Warna saat hover */
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background: linear-gradient(to right, #ff6f61, #de3d6d);
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    .product-card {
+        margin: 0 auto;
+    }
+}
